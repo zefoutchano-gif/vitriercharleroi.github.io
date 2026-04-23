@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHARLEROI VITRIER | Vitrerie, Miroiterie à Charleroi - Devis gratuit</title>
+  <meta name="description" content="Expert en vitrerie à Charleroi et environs : portes en verre, cloisons vitrées, garde-corps, parois de douche, crédences, miroiterie et découpe sur mesure. Devis gratuit, intervention rapide 24h/24.">
+
+  <!-- Google Ads Tag (à adapter) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18052194573"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18052194573', { 'send_page_view': true });
+
+    function trackPhoneCall() {
+      gtag('event', 'conversion', { 'send_to': 'AW-18052194573/O9ljCPXanZMcEI3C-p9D' });
+    }
+    function trackWhatsApp(url) {
+      gtag('event', 'conversion', { 'send_to': 'AW-18052194573/60ZtCLPgnZMcEI3C-p9D' });
+      setTimeout(function(){ window.open(url, '_blank'); }, 300);
+      return false;
+    }
+    function trackFormSubmit() {
+      gtag('event', 'conversion', { 'send_to': 'AW-18052194573/mWgcCJH2r5McEI3C-p9D' });
+    }
+  </script>
+
+  <!-- Tailwind + Fonts -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#0070a8",
+            "primary-dark": "#005a88",
+            "primary-light": "#E6F3FA",
+            "secondary-bg": "#F5F5F5",
+            "background-light": "#FFFFFF",
+            "background-dark": "#111827",
+            "surface-light": "#F9FAFB",
+            "surface-dark": "#1F2937",
+            "text-light": "#2C2C2C",
+            "text-dark": "#F3F4F6",
+            "text-muted-light": "#4B5563",
+            "text-muted-dark": "#9CA3AF",
+            charcoal: "#2C2C2C",
+          },
+          fontFamily: { display: ["Inter","sans-serif"], body: ["Inter","sans-serif"] },
+          boxShadow: {
+            soft: "0 4px 20px -2px rgba(0,0,0,0.05)",
+            card: "0 2px 10px rgba(0,0,0,0.06)",
+            cta: "0 10px 30px rgba(0,112,168,0.4)",
+            glow: "0 0 20px rgba(0,112,168,0.3)",
+          },
+          animation: { "pulse-slow":"pulse 3s cubic-bezier(0.4,0,0.6,1) infinite", "float":"float 3s ease-in-out infinite" },
+          keyframes: { float: { "0%,100%":{ transform:"translateY(0px)" }, "50%":{ transform:"translateY(-10px)" } } },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    body { font-family:'Inter',sans-serif; color:#2C2C2C; scroll-behavior:smooth; }
+    .hero-gradient { background: radial-gradient(circle at center, #0099d6 0%, #0070a8 60%, #005a88 100%); }
+    .glass-card { background:rgba(255,255,255,0.15); backdrop-filter:blur(10px); border:1px solid rgba(255,255,255,0.3); }
+    .btn-cta { background:linear-gradient(135deg,#0070a8 0%,#005a88 100%); box-shadow:0 10px 30px rgba(0,112,168,0.4); transition:all 0.3s ease; }
+    .btn-cta:hover { transform:translateY(-3px) scale(1.02); box-shadow:0 15px 40px rgba(0,112,168,0.5); }
+    .btn-whatsapp { background:linear-gradient(135deg,#25D366 0%,#128C7E 100%); box-shadow:0 10px 30px rgba(37,211,102,0.4); transition:all 0.3s ease; }
+    .btn-whatsapp:hover { transform:translateY(-3px) scale(1.02); box-shadow:0 15px 40px rgba(37,211,102,0.5); }
+    .btn-secondary { background:#2C2C2C; transition:all 0.3s ease; }
+    .btn-secondary:hover { background:#1F1F1F; transform:translateY(-3px); box-shadow:0 10px 20px rgba(0,0,0,0.2); }
+    .shine-effect { position:relative; overflow:hidden; }
+    .shine-effect::after { content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background:linear-gradient(45deg,transparent 30%,rgba(255,255,255,0.4) 50%,transparent 70%); transform:rotate(45deg) translateX(-100%); transition:transform 0.6s; }
+    .shine-effect:hover::after { transform:rotate(45deg) translateX(100%); }
+    .comparison-slider { position:relative; width:100%; overflow:hidden; border-radius:1.5rem; box-shadow:0 25px 50px -12px rgba(0,0,0,0.25); }
+    .comparison-slider img { display:block; width:100%; height:350px; object-fit:cover; }
+    .comparison-slider .after { position:absolute; top:0; left:0; width:100%; height:100%; clip-path:inset(0 0 0 50%); }
+    .comparison-slider .divider { position:absolute; top:0; left:50%; width:4px; height:100%; background:white; transform:translateX(-50%); cursor:ew-resize; box-shadow:0 0 20px rgba(0,0,0,0.5); z-index:10; }
+    .comparison-slider .divider::after { content:'\f337'; font-family:'Font Awesome 6 Free'; font-weight:900; position:absolute; top:50%; left:50%; width:50px; height:50px; background:white; border-radius:50%; transform:translate(-50%,-50%); box-shadow:0 4px 20px rgba(0,0,0,0.3); display:flex; align-items:center; justify-content:center; color:#0070a8; font-size:1.2rem; }
+    .popup-overlay { position:fixed; inset:0; background:rgba(0,0,0,0.8); backdrop-filter:blur(5px); z-index:200; display:none; align-items:center; justify-content:center; padding:1rem; }
+    .popup-overlay.active { display:flex; animation:fadeIn 0.3s ease; }
+    @keyframes fadeIn { from{opacity:0} to{opacity:1} }
+    .sticky-cta { position:fixed; bottom:0; left:0; right:0; z-index:100; transform:translateY(100%); transition:transform 0.3s ease; }
+    .sticky-cta.visible { transform:translateY(0); }
+    .faq-content { max-height:0; overflow:hidden; transition:max-height 0.3s ease,padding 0.3s ease; }
+    .faq-content.open { max-height:500px; }
+    .floating-cta { position:fixed; right:20px; bottom:140px; z-index:99; display:flex; flex-direction:column; gap:10px; }
+    .floating-btn { width:60px; height:60px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white; font-size:24px; box-shadow:0 4px 15px rgba(0,0,0,0.3); transition:all 0.3s ease; animation:float-btn 3s ease-in-out infinite; }
+    .floating-btn:hover { transform:scale(1.1); }
+    @keyframes float-btn { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-5px)} }
+    .confetti { position:fixed; width:10px; height:10px; background:#0070a8; animation:confetti-fall 3s linear forwards; z-index:9998; }
+    @keyframes confetti-fall { 0%{transform:translateY(-100vh) rotate(0deg);opacity:1} 100%{transform:translateY(100vh) rotate(720deg);opacity:0} }
+    .phone-pulse { animation:phone-pulse 2s ease-in-out infinite; }
+    @keyframes phone-pulse { 0%,100%{box-shadow:0 0 0 0 rgba(0,112,168,0.7)} 50%{box-shadow:0 0 0 15px rgba(0,112,168,0)} }
+    .reveal { opacity:0; transform:translateY(30px); transition:all 0.6s ease; }
+    .reveal.active { opacity:1; transform:translateY(0); }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark antialiased">
+
+<!-- HEADER -->
+<header class="bg-white dark:bg-surface-dark py-3 shadow-sm sticky top-0 z-50">
+  <div class="container mx-auto px-4 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+      <div class="flex items-center gap-2 text-charcoal dark:text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#0070a8" stroke-width="1.5" width="28" height="28" class="inline-block">
+          <rect x="2" y="3" width="20" height="18"/>
+          <line x1="2" y1="9" x2="22" y2="9"/>
+          <line x1="12" y1="3" x2="12" y2="21"/>
+        </svg>
+        <span class="font-bold text-xl">CHARLEROI VITRIER</span>
+      </div>
+    </div>
+    <a href="tel:+32495530161"
+       onclick="trackPhoneCall()"
+       class="bg-white hover:bg-gray-100 text-charcoal border-2 border-primary font-bold py-2 px-6 rounded-full flex items-center gap-2 transition-transform transform hover:scale-105 shadow-lg">
+      <span class="material-icons text-sm text-primary">phone</span>
+      +32 495 53 01 61
+    </a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero-gradient text-white py-12 md:py-20 relative overflow-hidden">
+  <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image:radial-gradient(circle,#fff 1px,transparent 1px);background-size:20px 20px;"></div>
+  <div class="container mx-auto px-4 text-center relative z-10">
+    <div class="inline-flex items-center gap-1 bg-charcoal/20 backdrop-blur-sm px-4 py-1 rounded-full text-xs font-semibold tracking-wide mb-6 border border-white/30 text-white">
+      <span class="material-icons text-sm">schedule</span>
+      INTERVENTION 24H/24 & 7J/7 – CHARLEROI ET ENVIRONS
+    </div>
+    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight text-white drop-shadow-sm">
+      Vitrerie & Miroiterie <br/><span class="underline decoration-4 decoration-white">sur mesure</span>
+    </h1>
+    <div class="inline-block bg-charcoal text-white font-bold text-lg px-6 py-2 rounded-lg shadow-md mb-6 transform -rotate-1 border border-charcoal">
+      DEVIS GRATUIT SANS ENGAGEMENT
+    </div>
+    <p class="text-lg md:text-xl font-medium mb-6 max-w-2xl mx-auto opacity-95 text-white">
+      Portes en verre, cloisons vitrées, garde-corps, parois de douche, crédences, miroiterie et découpe sur mesure.<br/>
+      Artisan vitrier professionnel – Devis gratuit – Intervention rapide à Charleroi et ses environs
+    </p>
+    <div class="flex flex-col items-center justify-center gap-4 mb-6">
+      <a class="bg-white text-charcoal hover:bg-gray-50 text-2xl md:text-3xl font-bold py-4 px-10 rounded-full shadow-xl flex items-center gap-3 transition-transform hover:-translate-y-1 ring-4 ring-white/30"
+         href="tel:+32495530161"
+         onclick="trackPhoneCall()">
+        <span class="material-icons text-primary">phone_in_talk</span>
+        +32 495 53 01 61
+      </a>
+      <div class="flex items-center gap-2 text-sm font-medium bg-charcoal/30 text-white px-4 py-1 rounded-full backdrop-blur-sm">
+        <span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+        Disponible 24h/24 et 7j/7
+      </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-5xl mx-auto mt-8">
+      <div class="glass-card p-4 rounded-xl flex flex-col items-center text-white"><span class="material-icons text-3xl mb-2">verified_user</span><h3 class="font-bold">Artisan certifié</h3><p class="text-sm opacity-90">Vitrier professionnel qualifié</p></div>
+      <div class="glass-card p-4 rounded-xl flex flex-col items-center text-white"><span class="material-icons text-3xl mb-2">thumb_up</span><h3 class="font-bold">Satisfaction totale</h3><p class="text-sm opacity-90">+500 clients conquis</p></div>
+      <div class="glass-card p-4 rounded-xl flex flex-col items-center text-white"><i class="fas fa-ruler-combined text-3xl mb-2"></i><h3 class="font-bold">Sur mesure</h3><p class="text-sm opacity-90">Découpe et pose personnalisées</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- NOS SERVICES -->
+<section class="py-16 bg-secondary-bg dark:bg-gray-900">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-10">
+      <h2 class="text-3xl font-bold text-charcoal dark:text-white mb-3">🔨 Nos <span class="text-primary">services en vitrerie</span></h2>
+      <p class="text-text-muted-light dark:text-text-muted-dark max-w-2xl mx-auto">De la découpe à la pose, nous réalisons tous vos projets verriers sur mesure à Charleroi et aux alentours.</p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div class="bg-white dark:bg-surface-dark p-6 rounded-2xl shadow-card"><i class="fas fa-door-open text-primary text-3xl mb-4"></i><h3 class="font-bold text-xl mb-2">Portes en verre</h3><ul class="text-sm text-gray-600 dark:text-gray-400 space-y-1 list-disc pl-4"><li>Sur mesure, style atelier</li><li>Coulissantes, suspendues</li><li>Va-et-vient sur pivot</li><li>Avec motifs décoratifs</li></ul></div>
+      <div class="bg-white dark:bg-surface-dark p-6 rounded-2xl shadow-card"><i class="fas fa-border-all text-primary text-3xl mb-4"></i><h3 class="font-bold text-xl mb-2">Cloisons vitrées</h3><ul class="text-sm text-gray-600 dark:text-gray-400 space-y-1 list-disc pl-4"><li>Agencement de bureaux</li><li>Isolation acoustique</li><li>Décoration intérieure</li><li>Verre clair ou dépoli</li></ul></div>
+      <div class="bg-white dark:bg-surface-dark p-6 rounded-2xl shadow-card"><i class="fas fa-stairs text-primary text-3xl mb-4"></i><h3 class="font-bold text-xl mb-2">Garde-corps en verre</h3><ul class="text-sm text-gray-600 dark:text-gray-400 space-y-1 list-disc pl-4"><li>Escaliers, mezzanines</li><li>Balcons, terrasses</li><li>Fixations invisibles</li><li>Verre feuilleté sécurisé</li></ul></div>
+      <div class="bg-white dark:bg-surface-dark p-6 rounded-2xl shadow-card"><i class="fas fa-shower text-primary text-3xl mb-4"></i><h3 class="font-bold text-xl mb-2">Parois de douche</h3><ul class="text-sm text-gray-600 dark:text-gray-400 space-y-1 list-disc pl-4"><li>Douche à l’italienne</li><li>Cabines de douche</li><li>Parois pour baignoire</li><li>Verre clair, anti-calcaire</li></ul></div>
+      <div class="bg-white dark:bg-surface-dark p-6 rounded-2xl shadow-card"><i class="fas fa-kitchen-set text-primary text-3xl mb-4"></i><h3 class="font-bold text-xl mb-2">Crédences en verre</h3><ul class="text-sm text-gray-600 dark:text-gray-400 space-y-1 list-disc pl-4"><li>Cuisine et salle de bain</li><li>Motifs décoratifs</li><li>Facile d’entretien</li><li>Pose précise</li></ul></div>
+      <div class="bg-white dark:bg-surface-dark p-6 rounded-2xl shadow-card"><i class="fas fa-crop-simple text-primary text-3xl mb-4"></i><h3 class="font-bold text-xl mb-2">Miroiterie & découpe</h3><ul class="text-sm text-gray-600 dark:text-gray-400 space-y-1 list-disc pl-4"><li>Découpe sur mesure</li><li>Façonnage du verre</li><li>Miroirs intérieurs / extérieurs</li><li>Toutes dimensions</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- RÉALISATIONS & FINITIONS -->
+<section class="py-16 bg-white dark:bg-background-dark">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold text-charcoal dark:text-white mb-3">🎯 Nos <span class="text-primary">prestations</span> sur mesure</h2>
+      <p class="text-text-muted-light dark:text-text-muted-dark max-w-2xl mx-auto">De la conception à la pose, nous vous accompagnons dans tous vos projets verriers à Charleroi.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div class="bg-white dark:bg-surface-dark border rounded-2xl p-6 shadow-card"><i class="fas fa-pencil-ruler text-primary text-2xl mb-3"></i><h3 class="font-bold text-lg">Conception sur mesure</h3><p class="text-sm text-gray-600 dark:text-gray-400">Nous étudions vos besoins et réalisons des plans précis avant fabrication.</p></div>
+      <div class="bg-white dark:bg-surface-dark border rounded-2xl p-6 shadow-card"><i class="fas fa-industry text-primary text-2xl mb-3"></i><h3 class="font-bold text-lg">Fabrication artisanale</h3><p class="text-sm text-gray-600 dark:text-gray-400">Découpe et façonnage du verre dans notre atelier avec du matériel professionnel.</p></div>
+      <div class="bg-white dark:bg-surface-dark border rounded-2xl p-6 shadow-card"><i class="fas fa-truck-fast text-primary text-2xl mb-3"></i><h3 class="font-bold text-lg">Livraison & pose</h3><p class="text-sm text-gray-600 dark:text-gray-400">Nous livrons et installons vos menuiseries vitrées à Charleroi et dans les communes voisines.</p></div>
+      <div class="bg-white dark:bg-surface-dark border rounded-2xl p-6 shadow-card"><i class="fas fa-shield-haltered text-primary text-2xl mb-3"></i><h3 class="font-bold text-lg">Verre de sécurité</h3><p class="text-sm text-gray-600 dark:text-gray-400">Verre feuilleté, trempé, conforme aux normes pour garde-corps, portes, etc.</p></div>
+      <div class="bg-white dark:bg-surface-dark border rounded-2xl p-6 shadow-card"><i class="fas fa-paint-roller text-primary text-2xl mb-3"></i><h3 class="font-bold text-lg">Finition soignée</h3><p class="text-sm text-gray-600 dark:text-gray-400">Joints silicone professionnels, profilés aluminium, finitions impeccables.</p></div>
+      <div class="bg-white dark:bg-surface-dark border rounded-2xl p-6 shadow-card"><i class="fas fa-clock text-primary text-2xl mb-3"></i><h3 class="font-bold text-lg">Intervention rapide</h3><p class="text-sm text-gray-600 dark:text-gray-400">Disponible 24h/24 et 7j/7 pour les urgences (vitres cassées, etc.) à Charleroi et environs.</p></div>
+    </div>
+    <div class="text-center mt-12">
+      <a href="#"
+         onclick="trackWhatsApp('https://wa.me/32495530161?text=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20un%20projet%20de%20vitrerie.%20Je%20suis%20situ%C3%A9%20%C3%A0%20Charleroi%20ou%20environs.'); return false;"
+         class="btn-secondary text-white font-bold py-4 px-8 rounded-2xl inline-flex items-center gap-2 shine-effect">
+        <span class="material-icons">description</span> Demander un devis personnalisé
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- AVANT/APRÈS avec vos images -->
+<section id="realisations" class="py-16 bg-secondary-bg dark:bg-gray-900">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12 reveal">
+      <h2 class="text-3xl font-bold text-charcoal dark:text-white mb-3">Nos <span class="text-primary">réalisations</span></h2>
+      <p class="text-text-muted-light dark:text-text-muted-dark max-w-2xl mx-auto">Déplacez le curseur pour voir la transformation</p>
+    </div>
+    <div class="max-w-4xl mx-auto reveal">
+      <div class="comparison-slider" id="comparison-slider">
+        <!-- Image Avant -->
+        <img src="https://i.imgur.com/F4hPZ3Z.jpeg" alt="Avant vitrerie" class="before">
+        <!-- Image Après -->
+        <div class="after"><img src="https://i.imgur.com/itWJktC.jpeg" alt="Après vitrerie"></div>
+        <div class="divider" id="divider"></div>
+      </div>
+      <div class="text-center mt-10">
+        <a href="#"
+           onclick="trackWhatsApp('https://wa.me/32495530161?text=Bonjour%2C%20je%20souhaite%20un%20devis%20pour%20un%20projet%20de%20vitrerie%20%C3%A0%20Charleroi.'); return false;"
+           class="btn-cta text-white px-8 py-4 rounded-2xl font-bold inline-flex items-center gap-2 shine-effect">
+          <span class="material-icons">description</span> Demander un devis gratuit
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- URGENCE / RÉACTIVITÉ -->
+<section class="relative overflow-hidden py-16 bg-charcoal text-white">
+  <div class="container mx-auto px-4 relative z-10 text-center">
+    <div class="inline-flex items-center gap-2 bg-primary/20 rounded-full px-4 py-2 mb-6"><i class="fas fa-stopwatch text-primary"></i><span class="font-bold">INTERVENTION RAPIDE - 24H/24 7J/7</span></div>
+    <h2 class="text-3xl md:text-5xl font-black mb-4">Un projet de vitrerie ?<br><span class="text-primary text-2xl md:text-3xl">Intervention à Charleroi et ses environs ⚡</span></h2>
+    <p class="text-xl mb-6 text-gray-200">+500 clients satisfaits – Devis gratuit – Artisan vitrier certifié</p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="tel:+32495530161"
+         onclick="trackPhoneCall()"
+         class="bg-white text-charcoal px-8 py-4 rounded-2xl font-bold text-xl flex items-center gap-3 hover:scale-105 transition shadow-2xl phone-pulse">
+        <i class="fas fa-phone-alt"></i>+32 495 53 01 61
+      </a>
+      <a href="#"
+         onclick="trackWhatsApp('https://wa.me/32495530161?text=Bonjour%2C%20j%27ai%20besoin%20d%27un%20devis%20pour%20un%20projet%20de%20vitrerie%20%C3%A0%20Charleroi.'); return false;"
+         class="btn-whatsapp text-white px-8 py-4 rounded-2xl font-bold text-xl flex items-center gap-3 hover:scale-105 transition">
+        <i class="fab fa-whatsapp"></i>WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- AVIS CLIENTS GOOGLE -->
+<section id="avis-section" class="py-16 bg-white dark:bg-background-dark">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-10 flex flex-col items-center">
+      <div class="flex items-center gap-2 mb-2">
+        <i class="fab fa-google text-primary text-2xl"></i>
+        <span class="text-xl font-bold text-charcoal dark:text-white">Avis Google</span>
+      </div>
+      <div class="flex items-center gap-2">
+        <span class="font-bold text-primary">4.8</span>
+        <div class="flex text-primary text-sm"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <span class="text-sm text-gray-500">(120+ avis)</span>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div class="border border-gray-200 dark:border-gray-700 p-6 rounded-xl shadow-sm bg-white dark:bg-surface-dark">
+        <div class="flex justify-between items-start mb-4"><div class="flex items-center gap-3"><div class="w-10 h-10 bg-charcoal rounded-full flex items-center justify-center text-white font-bold">C</div><div><div class="font-bold text-sm">Claire M.</div><div class="text-xs text-gray-500">Il y a 3 jours</div></div></div></div>
+        <div class="flex text-primary text-xs mb-3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="text-sm text-gray-600 dark:text-gray-300 italic mb-4">"Portes en verre style atelier posées avec une finition impeccable. Très professionnel !"</p>
+        <div class="text-xs text-green-600 flex items-center gap-1"><span class="material-icons text-xs">check_circle</span> Avis vérifié</div>
+      </div>
+      <div class="border border-gray-200 dark:border-gray-700 p-6 rounded-xl shadow-sm bg-white dark:bg-surface-dark">
+        <div class="flex justify-between items-start mb-4"><div class="flex items-center gap-3"><div class="w-10 h-10 bg-charcoal rounded-full flex items-center justify-center text-white font-bold">J</div><div><div class="font-bold text-sm">Jean-Philippe D.</div><div class="text-xs text-gray-500">Il y a 1 semaine</div></div></div></div>
+        <div class="flex text-primary text-xs mb-3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="text-sm text-gray-600 dark:text-gray-300 italic mb-4">"Cloison de bureau en verre : isolation acoustique parfaite, pose rapide. Vivement recommandé."</p>
+        <div class="text-xs text-green-600 flex items-center gap-1"><span class="material-icons text-xs">check_circle</span> Avis vérifié</div>
+      </div>
+      <div class="border border-gray-200 dark:border-gray-700 p-6 rounded-xl shadow-sm bg-white dark:bg-surface-dark">
+        <div class="flex justify-between items-start mb-4"><div class="flex items-center gap-3"><div class="w-10 h-10 bg-charcoal rounded-full flex items-center justify-center text-white font-bold">S</div><div><div class="font-bold text-sm">Sophie L.</div><div class="text-xs text-gray-500">Il y a 2 semaines</div></div></div></div>
+        <div class="flex text-primary text-xs mb-3"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="text-sm text-gray-600 dark:text-gray-300 italic mb-4">"Crédence de cuisine sur mesure et paroi de douche italienne : magnifique et facile à entretenir."</p>
+        <div class="text-xs text-green-600 flex items-center gap-1"><span class="material-icons text-xs">check_circle</span> Avis vérifié</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="py-16 bg-secondary-bg dark:bg-gray-900">
+  <div class="container mx-auto px-4 max-w-4xl">
+    <div class="text-center mb-12 reveal">
+      <h2 class="text-3xl font-bold text-charcoal dark:text-white">Questions <span class="text-primary">fréquentes</span> 🪟</h2>
+      <p class="text-text-muted-light dark:text-text-muted-dark">Vitrerie, miroiterie, sur mesure – toutes les réponses.</p>
+    </div>
+    <div class="space-y-4">
+      <div class="bg-white dark:bg-surface-dark rounded-2xl overflow-hidden shadow-sm"><button class="faq-btn w-full flex items-center justify-between p-6 text-left font-bold text-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition"><span>🪟 Quels types de verre proposez-vous ?</span><span class="material-icons transition-transform duration-300">expand_more</span></button><div class="faq-content px-6 text-text-muted-light dark:text-gray-400"><p class="pb-6">Nous travaillons le verre clair, dépoli, trempé, feuilleté, à contrôle solaire, anti-calcaire et acoustique. Toutes nos découpes sont sur mesure.</p></div></div>
+      <div class="bg-white dark:bg-surface-dark rounded-2xl overflow-hidden shadow-sm"><button class="faq-btn w-full flex items-center justify-between p-6 text-left font-bold text-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition"><span>📅 Comment obtenir un devis gratuit ?</span><span class="material-icons transition-transform duration-300">expand_more</span></button><div class="faq-content px-6 text-text-muted-light dark:text-gray-400"><p class="pb-6">Appelez-nous au +32 495 53 01 61 ou utilisez le formulaire ci-dessous. Nous intervenons rapidement pour un devis détaillé sans engagement.</p></div></div>
+      <div class="bg-white dark:bg-surface-dark rounded-2xl overflow-hidden shadow-sm"><button class="faq-btn w-full flex items-center justify-between p-6 text-left font-bold text-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition"><span>📍 Intervenez-vous uniquement à Charleroi ?</span><span class="material-icons transition-transform duration-300">expand_more</span></button><div class="faq-content px-6 text-text-muted-light dark:text-gray-400"><p class="pb-6">Nous intervenons principalement à Charleroi et dans toutes les communes environnantes (Gilly, Montignies-sur-Sambre, Lodelinsart, etc.). N’hésitez pas à nous contacter pour vérifier notre disponibilité dans votre secteur.</p></div></div>
+      <div class="bg-white dark:bg-surface-dark rounded-2xl overflow-hidden shadow-sm"><button class="faq-btn w-full flex items-center justify-between p-6 text-left font-bold text-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition"><span>📋 Proposez-vous un service d'urgence ?</span><span class="material-icons transition-transform duration-300">expand_more</span></button><div class="faq-content px-6 text-text-muted-light dark:text-gray-400"><p class="pb-6">Oui, nous sommes disponibles 24h/24 et 7j/7 pour les urgences (vitres brisées, sécurisation de locaux, etc.). Appelez-nous directement.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-16 bg-white dark:bg-background-dark">
+  <div class="container mx-auto px-4">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="reveal">
+        <span class="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-bold mb-4"><span class="material-icons text-sm">send</span>CONTACT RAPIDE</span>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Besoin d’un <span class="text-primary">devis vitrerie</span> à Charleroi ?</h2>
+        <p class="text-text-muted-light dark:text-gray-400 mb-6">Remplissez le formulaire et nous vous répondons sous <strong class="text-primary">15 minutes</strong>.</p>
+        <div class="space-y-4">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-primary rounded-xl flex items-center justify-center text-white"><i class="fas fa-phone"></i></div>
+            <div>
+              <div class="text-sm text-gray-500">Appelez-nous</div>
+              <a href="tel:+32495530161" onclick="trackPhoneCall()" class="font-bold text-xl hover:text-primary transition">+32 495 53 01 61</a>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center text-white"><i class="fab fa-whatsapp"></i></div>
+            <div>
+              <div class="text-sm text-gray-500">WhatsApp</div>
+              <a href="#" onclick="trackWhatsApp('https://wa.me/32495530161?text=Bonjour%2C%20je%20souhaite%20obtenir%20un%20devis%20pour%20un%20projet%20de%20vitrerie%20%C3%A0%20Charleroi.'); return false;" class="font-bold text-xl hover:text-green-600 transition">+32 495 53 01 61</a>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-charcoal rounded-xl flex items-center justify-center text-white"><i class="fas fa-envelope"></i></div>
+            <div><div class="text-sm text-gray-500">Email</div><div class="font-bold text-xl">contact@renovationbelgium.be</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white dark:bg-surface-dark rounded-2xl p-6 shadow-lg reveal">
+        <h3 class="text-xl font-bold mb-4 text-charcoal dark:text-white">Demande de devis express</h3>
+        <form id="contact-form" class="space-y-4" onsubmit="sendWhatsApp(event);">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div><label class="block text-sm font-semibold mb-1">Prénom *</label><input id="prenom" type="text" class="w-full px-4 py-2 rounded-xl border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20" required></div>
+            <div><label class="block text-sm font-semibold mb-1">Nom *</label><input id="nom" type="text" class="w-full px-4 py-2 rounded-xl border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20" required></div>
+          </div>
+          <div><label class="block text-sm font-semibold mb-1">Téléphone *</label><input id="telephone" type="tel" class="w-full px-4 py-2 rounded-xl border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20" required></div>
+          <div><label class="block text-sm font-semibold mb-1">Email</label><input id="email" type="email" class="w-full px-4 py-2 rounded-xl border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20"></div>
+          <div><label class="block text-sm font-semibold mb-1">Type de prestation</label>
+            <select id="toiture" class="w-full px-4 py-2 rounded-xl border border-gray-300">
+              <option>Porte en verre / style atelier</option>
+              <option>Cloison vitrée (bureau, séparation)</option>
+              <option>Garde-corps en verre</option>
+              <option>Paroi de douche / douche italienne</option>
+              <option>Crédence cuisine / salle de bain</option>
+              <option>Miroiterie & découpe sur mesure</option>
+              <option>Vitrage de sécurité (trempé, feuilleté)</option>
+              <option>Autre projet</option>
+            </select>
+          </div>
+          <div><label class="block text-sm font-semibold mb-1">Message</label><textarea id="message" rows="3" class="w-full px-4 py-2 rounded-xl border border-gray-300" placeholder="Décrivez votre projet (dimensions, type de verre, localisation)..."></textarea></div>
+          <button type="submit" class="w-full btn-cta text-white py-3 rounded-xl font-bold flex items-center justify-center gap-2"><span class="material-icons">send</span>Envoyer ma demande</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-surface-light dark:bg-gray-900 pt-16 pb-8 border-t border-gray-200 dark:border-gray-800">
+  <div class="container mx-auto px-4">
+    <h3 class="text-xl font-bold text-center mb-2 text-charcoal dark:text-white">Zone d'intervention</h3>
+    <p class="text-center text-gray-500 text-sm mb-6">Charleroi (6000) et les communes environnantes – Intervention 24h/24</p>
+    <div class="flex justify-center mb-8">
+      <a href="tel:+32495530161" onclick="trackPhoneCall()" class="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold py-3 px-8 rounded-full transition shadow-lg">
+        <span class="material-icons text-sm">phone</span> Appeler maintenant
+      </a>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-y-2 gap-x-4 max-w-5xl mx-auto text-sm text-gray-600 dark:text-gray-400">
+      <div class="flex items-center gap-2"><span class="material-icons text-primary text-xs">location_on</span>Charleroi</div>
+      <div class="flex items-center gap-2"><span class="material-icons text-primary text-xs">location_on</span>Gilly</div>
+      <div class="flex items-center gap-2"><span class="material-icons text-primary text-xs">location_on</span>Montignies-sur-Sambre</div>
+      <div class="flex items-center gap-2"><span class="material-icons text-primary text-xs">location_on</span>Marchienne-au-Pont</div>
+      <div class="flex items-center gap-2"><span class="material-icons text-primary text-xs">location_on</span>Lodelinsart</div>
+      <div class="flex items-center gap-2"><span class="material-icons text-primary text-xs">location_on</span>Couillet</div>
+      <div class="flex items-center gap-2"><span class="material-icons text-primary text-xs">location_on</span>Dampremy</div>
+      <div class="flex items-center gap-2"><span class="material-icons text-primary text-xs">location_on</span>Roux</div>
+    </div>
+    <div class="mt-12 pt-6 border-t border-gray-200 dark:border-gray-800 text-center text-xs text-gray-400">
+      © 2025 CHARLEROI VITRIER – Vitrerie, miroiterie, découpe sur mesure à Charleroi – Tous droits réservés
+    </div>
+  </div>
+</footer>
+
+<!-- STICKY CTA -->
+<div class="sticky-cta bg-white dark:bg-surface-dark shadow-2xl border-t dark:border-gray-700" id="sticky-cta">
+  <div class="container mx-auto px-4 py-3">
+    <div class="flex items-center justify-between">
+      <div class="hidden sm:block"><div class="font-bold text-charcoal dark:text-white">Un projet de vitrerie ?</div><div class="text-sm text-gray-500">Devis gratuit et rapide</div></div>
+      <div class="flex gap-3 w-full sm:w-auto">
+        <a href="tel:+32495530161" onclick="trackPhoneCall()" class="flex-1 sm:flex-none btn-cta text-white px-6 py-2 rounded-xl font-bold text-center">Appeler</a>
+        <a href="#" onclick="trackWhatsApp('https://wa.me/32495530161?text=Bonjour%2C%20je%20souhaite%20obtenir%20un%20devis%20pour%20un%20projet%20de%20vitrerie%20%C3%A0%20Charleroi.'); return false;" class="flex-1 sm:flex-none btn-secondary text-white px-6 py-2 rounded-xl font-bold text-center">Devis gratuit</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FLOATING CTA -->
+<div class="floating-cta hidden lg:flex">
+  <a href="tel:+32495530161" onclick="trackPhoneCall()" class="floating-btn bg-primary" title="Appeler"><i class="fas fa-phone"></i></a>
+  <a href="#" onclick="trackWhatsApp('https://wa.me/32495530161?text=Bonjour%2C%20je%20souhaite%20obtenir%20un%20devis%20pour%20un%20projet%20de%20vitrerie%20%C3%A0%20Charleroi.'); return false;" class="floating-btn bg-green-500" title="WhatsApp" style="animation-delay:0.5s;"><i class="fab fa-whatsapp"></i></a>
+</div>
+
+<!-- SUCCESS POPUP -->
+<div class="popup-overlay" id="success-popup">
+  <div class="bg-white dark:bg-surface-dark rounded-2xl p-8 max-w-md text-center relative">
+    <button onclick="closeSuccessPopup()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center"><span class="material-icons">close</span></button>
+    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4"><span class="material-icons text-4xl text-primary">check_circle</span></div>
+    <h3 class="text-2xl font-bold mb-2">Message envoyé ! 🎉</h3>
+    <p class="text-gray-600 mb-4">Merci pour votre demande. Nous vous répondons sous 15 minutes.</p>
+    <a href="tel:+32495530161" onclick="trackPhoneCall()" class="inline-block btn-cta text-white px-6 py-2 rounded-xl font-bold">Appeler maintenant</a>
+  </div>
+</div>
+
+<script>
+  // Sticky CTA
+  window.addEventListener('scroll', () => {
+    const sticky = document.getElementById('sticky-cta');
+    if (window.scrollY > 500) sticky.classList.add('visible');
+    else sticky.classList.remove('visible');
+  });
+
+  // Comparison slider
+  const sliderEl = document.getElementById('comparison-slider');
+  if (sliderEl) {
+    const divider = document.getElementById('divider');
+    const after = sliderEl.querySelector('.after');
+    let dragging = false;
+    divider.addEventListener('mousedown', () => dragging = true);
+    document.addEventListener('mouseup', () => dragging = false);
+    sliderEl.addEventListener('mousemove', (e) => {
+      if (!dragging) return;
+      const rect = sliderEl.getBoundingClientRect();
+      let pct = Math.max(0, Math.min(100, ((e.clientX - rect.left) / rect.width) * 100));
+      divider.style.left = pct + '%';
+      after.style.clipPath = `inset(0 0 0 ${pct}%)`;
+    });
+    sliderEl.addEventListener('touchmove', (e) => {
+      const rect = sliderEl.getBoundingClientRect();
+      let pct = Math.max(0, Math.min(100, ((e.touches[0].clientX - rect.left) / rect.width) * 100));
+      divider.style.left = pct + '%';
+      after.style.clipPath = `inset(0 0 0 ${pct}%)`;
+    });
+  }
+
+  // FAQ
+  document.querySelectorAll('.faq-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const content = btn.nextElementSibling;
+      const icon = btn.querySelector('.material-icons');
+      const isOpen = content.classList.contains('open');
+      document.querySelectorAll('.faq-content').forEach(c => c.classList.remove('open'));
+      document.querySelectorAll('.faq-btn .material-icons').forEach(i => i.style.transform = 'rotate(0deg)');
+      if (!isOpen) { content.classList.add('open'); if (icon) icon.style.transform = 'rotate(180deg)'; }
+    });
+  });
+
+  // Popup
+  function closeSuccessPopup() { document.getElementById('success-popup').classList.remove('active'); }
+  function showSuccessMessage() {
+    document.getElementById('success-popup').classList.add('active');
+    for (let i = 0; i < 50; i++) {
+      let c = document.createElement('div');
+      c.className = 'confetti';
+      c.style.left = Math.random() * 100 + 'vw';
+      c.style.background = ['#0070a8','#005a88','#0099d6'][Math.floor(Math.random()*3)];
+      c.style.animationDelay = Math.random() * 2 + 's';
+      document.body.appendChild(c);
+      setTimeout(() => c.remove(), 3000);
+    }
+  }
+
+  // Formulaire → WhatsApp
+  function sendWhatsApp(event) {
+    event.preventDefault();
+    const prenom = document.getElementById('prenom').value.trim();
+    const nom = document.getElementById('nom').value.trim();
+    const tel = document.getElementById('telephone').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const travaux = document.getElementById('toiture').value;
+    const msg = document.getElementById('message').value.trim();
+    if (!prenom || !nom || !tel) return alert('Veuillez remplir prénom, nom et téléphone.');
+
+    trackFormSubmit();
+
+    let whatsMsg = `Bonjour, je souhaite obtenir un devis pour un projet de vitrerie.\n\nPrénom: ${prenom}\nNom: ${nom}\nTéléphone: ${tel}\n`;
+    if (email) whatsMsg += `Email: ${email}\n`;
+    if (travaux) whatsMsg += `Prestation souhaitée: ${travaux}\n`;
+    if (msg) whatsMsg += `Message: ${msg}\n`;
+    whatsMsg += `Localisation : Charleroi ou environs`;
+
+    setTimeout(function(){
+      window.open('https://wa.me/32495530161?text=' + encodeURIComponent(whatsMsg), '_blank');
+    }, 300);
+
+    showSuccessMessage();
+    document.getElementById('contact-form').reset();
+  }
+
+  // Reveal animations
+  const obs = new IntersectionObserver(entries => entries.forEach(e => e.isIntersecting && e.target.classList.add('active')), { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(r => obs.observe(r));
+</script>
+</body>
+</html>
